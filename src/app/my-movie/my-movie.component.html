@@ -1,0 +1,64 @@
+<section id="movie">
+  <h1 class="title"><span>Room {{ room }}</span> {{ title }}</h1>
+
+  <article class="fleft poster-container">
+    <img src="{{ poster }}" alt="{{ title }}">
+  </article>
+
+  <article class="fleft details-container">
+    <table>
+      <tbody>
+        <tr>
+          <td class="subject">
+            Genres
+          </td>
+          <td>
+            <div *ngFor="let genre of genres">{{ genre }}</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="subject">
+            Year
+          </td>
+          <td>
+            {{ year }}
+          </td>
+        </tr>
+
+        <tr>
+          <td class="subject">
+            Director
+          </td>
+          <td>
+            {{ director }}
+          </td>
+        </tr>
+
+        <tr>
+          <td class="subject">
+            Actors
+          </td>
+          <td>
+            <div *ngFor="let actor of actors">{{ actor }}</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="subject">
+            Schedule
+          </td>
+          <td>
+            <div *ngFor="let hour of hours">{{ hour }}</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="subject">Synopsis</p>
+    {{ synopsis }}
+  </article>
+  <div class="clearfix"></div>
+
+  <a [routerLink]="['/home']" class="go-back">Home</a>
+</section>

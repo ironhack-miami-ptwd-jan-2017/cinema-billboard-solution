@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300');
+
+* {
+  font-family: "Roboto";
+  font-weight: 300;
+}
+
+#movies {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.movie-container {
+  float: left;
+  margin: 20px 1%;
+  width: 18%;
+}
+
+.movie-container .room {
+  margin-bottom: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.movie-container .img {
+  width: 100%;
+}
+
+.movie-container .title {
+  font-size: 14px;
+  height: 40px;
+  text-align: center;
+}
+
+.movie-container a,
+.movie-container a:visited {
+  color: rgb(46, 101, 146);
+  text-decoration: none;
+  transition: .2s linear color;
+}
+
+.movie-container a:hover {
+  color: #333;
+  transition: .2s linear color;
+}
